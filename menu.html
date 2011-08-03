@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+ 	<link rel="stylesheet" href="menu.css" type="text/css">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+
+  <title>menu</title>
+  	<script src="../CasaOhana/JavaScript/jquery-1.6.2.js"></script>
+	<script src="../CasaOhana/JavaScript/jquery.localscroll.js"></script>
+	<script src="../CasaOhana/JavaScript/jquery.scrollTo.js"></script>
+	<script src="../CasaOhana/JavaScript/modernizr.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#slideshow").css("overflow", "hidden");
+			$("#slideshow-nav").css("visibility", "visible"	);
+
+			$("#slideshow-nav a[href=#image1]").addClass("active");
+			
+			$("#slideshow-nav").localScroll({
+				target:'#slideshow', axis: 'x'
+			});
+			$("#slideshow-nav a").click(function()	{
+				$("#slideshow-nav a").removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>
+
+</head>
+
+<body class="no-js">
+
+	<div class="center-container">
+	<div classs="top-wrapper">
+	<div class="icon"><h1>Jack</br>Dawson</h1></div>
+		<div class="menu-nav">
+		    <nav id="top-navigation">
+		  		<ul>
+			  		<li>
+						<a>Home</a>
+		  			</li>
+		  			<li><a>Galleries</a>
+		  				<ul>
+		  					<li><a>Under Construction</a></li>
+		  					<li><a>Finished</a></li>
+		  				</ul>
+		  			</li>
+		  			<li><a>Nav Link 2</a>
+		  				<ul>
+		  					<li><a>Sublink1</a></li>
+		  					<li><a>Sublink2</a></li>
+		  				</ul>
+		  			</li>
+		  			<li><a style="border-right:none;">About Us</a></li>
+		  		</ul>
+		    </nav>
+	    </div>
+  </div>
+ 	<div id="slideshow">
+ 		<ul>
+ 			<li id="image1"><img id="image1" src="Images/rome1.png"/></li>
+ 			<li id="image2"><img id="image2" src="Images/costa1.png"/></li>
+ 			<li id="image3"><img id="image3" src="Images/costa2.png"/></li>
+ 			<li id="image4"><img id="image4" src="Images/montana1.png"/></li>
+ 			<li id="image5"><img id="image5" src="Images/3.png" /></li>
+ 		</ul>
+ 		</div>
+ 		<div id="slideshow-nav">
+ 		<ul>
+ 			<li><a href="#image1"><img src="Images/rome1.png" width="65px" height="45px"/></a></li>
+ 			<li><a href="#image2"><img src="Images/costa1.png" width="65px" height="45px"/></a></li>
+ 			<li><a href="#image3"><img src="Images/costa2.png" width="65px" height="45px"/></a></li>
+ 			<li><a href="#image4"><img src="Images/montana1.png" width="65px" height="45px"/></a></li>
+ 			<li><a href="#image5"><img src="Images/3.png" width="65px" height="45px"/></a></li>
+
+ 		</ul>	
+ 	</div>
+    <footer>
+     <p>&copy; Copyright 2011 by Jackson Dawson</p>
+    </footer>
+    </div>
+</body>
+</html>

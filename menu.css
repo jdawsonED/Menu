@@ -1,0 +1,125 @@
+body {
+	
+}
+.center-container{background-color: #FFFFFF; 
+	width: 1000px; 
+	padding-top: 10px;
+	margin-left:auto; 
+	margin-right:auto; 
+	vertical-align: top; 
+	border-bottom: 1px; 
+	-moz-border-radius:4px; 
+	-webkit-border-bottom-rightright-radius: 4px; 
+	border-bottom-left-radius:4px; 
+	border-bottom-right-radius:4px;}
+/*.no-js nav li:hover ul{display: block;}*/
+#top-wrapper{
+	position:relative;
+}
+#icon{
+	float:left;	
+}
+#top-navigation{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+nav{
+	display: block; 
+	margin:0 auto 20px; 
+	position:relative;
+	border:1px solid #222;
+	background-color: #6a6a6a;
+	font:16px Tahoma, sans-serif;
+	margin-left:auto;
+	margin-right: auto;
+}
+nav ul { 
+	margin:0px;
+	padding:0px;
+	
+	}
+nav li{
+	position:relative;
+	float: left;
+	list-style-type: none;
+}
+nav li a {display:block; padding:10px; 20px; border-left: 1px solid #999; border-right:1px solid #222; color:#eee; text-decoration:none;}
+nav ul:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear: both;
+	visibility:hidden;
+}
+nav li a:focus{
+	outline:none; 
+	text-decoration:underline;
+	}
+nav li:first-child a {border-left:none;}
+nav ul li.last a {border-right-color: blue;}
+nav a span{display:block; float:right; margin-left: 5px;}
+nav ul ul{display:none; width:100%; position:absolute; left:0; background:#002bb8;}
+nav ul ul li{float:none;}
+nav ul ul a {padding:5px 10px; border-left: none; border-right:none; font-size:14px;}
+nav ul a:hover {background-color:#002bb8;}
+
+.borderradius nav{ -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;}
+.cssgradients nav{background-image:-moz-linear-gradient(0% 22px 90deg, #002bb8, #05d5ff); background-image: -webkit-gradient(linear, 0% 0% 0% 70%, from(#05d5ff), to (#002bb8));}
+.boxshadow.rgba nav{-moz-box-shadow:2px 2px 2px rgba(0,0,0,.75);-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.75); box-shadow: 2px 2px 2px rgba(0,0,0,.75);}
+.cssgradients nav li:hover{background-image: -moz-linear-gradient(0% 100px 90deg, #05d5ff, #002bb8); background-image: -webkit-gradient(linear, 0%, 0%, 0%, 100% from(#002bb8), to(#05d5ff));}
+.borderradius nav ul ul {-moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+.boxshadow.rgba nav ul ul {background-color: rgba(0,0,0,0.8); -moz-box-shadow:2px 2px 2px rgba(0,0,0,0.8); -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.8); box-shadow: 2px 2px 2px rgba(0,0,0,0.8);}
+.rgba nav ul ul li { border-left:1px solid; border-right: 1px solid;}
+.rgba nav ul ul a:hover{background-color: #002bb8;}
+.borderradius.rgba nav ul ul li.last { border-left: 1px solid; border-bottom: 1px; -moz-border-radius:4px; -webkit-border-bottom-rightright-radius: 4px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+.csstransforms ul a span{-moz-transform:rotate(-180deg)	; -webkit-transform:rotate(-180deg);}
+
+/*.no-cssgradients nav, .no-js nav {padding-bottom: 4px; border: none; background:url(image-url.gif) repeat-x 0 0;}
+.no-borderradius nav ul, .no-js nav ul {background:url(image-url.gif)	no-repeat 100% 0;}
+.no-borderradius nav ul ul, .no-js nav ul ul {background:none;}
+.no-borderradius nav li, .no-js nav li {height:44px;}
+.no-borderradius-cssgradients nav li:hover, .no-js nav li:hover {background:url(image-url.gif) repeat-x 0 0;}
+.noborderradius nav */
+
+footer{text-align:center;vertical-align: baseline;}
+
+#slideshow{
+	width: 918px; height: 546px;
+	overflow-x:scroll; overflow-y: hidden;
+	margin: 50px auto 50px auto;
+
+
+}
+#slideshow ul{
+	width: 4590px; list-style: none;
+}
+#slideshow ul li{
+	float: left;
+}
+#slideshow-nav{
+	 margin: 0 auto 200px auto; visibility:hidden;
+}
+#slideshow-nav ul{
+	list-style: none;
+}
+#slideshow-nav ul li{
+	float:left;
+}
+#slideshow-nav ul li a{
+	display:block;
+	float: left; 
+	margin: 0px 20px; 
+	box-shadow: 0px 0px 30px #000;
+	-webkit-box-shadow: 0px 0px 30px #000;
+	white-space: nowrap;
+}
+#slideshow-nav ul li a:hover #slideshow-nav ul li a.active{
+	background-color: #a89d8a;
+}
+
+#slideshow-nav ul li a img{
+	display:inline;
+	float:left;
+	vertical-align: bottom;
+}
